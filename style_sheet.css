@@ -1,0 +1,145 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-top: 127.5px;
+  background:  hsl(30, 38%, 92%);
+}
+.container{
+  position: relative;
+  width: 760px;
+  height: 585px;
+  /* height: 760px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 30px;
+}
+.container .internal{
+  width: 700px;
+  height: 525px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* margin: 30px; */
+}
+.container .internal .imgBx{
+  position: relative;
+  width: 350px;
+}
+.container .internal .imgBx picture img{
+  max-width: 100%;
+  border-radius: 10px 0px 0px 10px;
+}
+.container .internal .contentBx{
+  position: relative;
+  width: 350px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0px 10px 10px 0px;
+}
+.container .internal .contentBx .interior{
+  width: 290px;
+  height: 465px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  position: relative;
+  margin: 30px;
+}
+.container .internal .contentBx .interior h3, #description{
+  color: hsl(228, 12%, 48%);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+.container .internal .contentBx .interior h3{
+  margin-bottom: 27.75px;
+}
+.container .internal .contentBx .interior #description{
+  margin-bottom: 27.75px;
+}
+.container .internal .contentBx .interior h1{
+  color:  hsl(212, 21%, 14%);
+  font-family: 'Fraunces', serif;
+  font-weight: 700;
+  font-size: 45px;
+
+  margin-bottom: 27.75px;
+}
+.container .internal .contentBx .interior #price{
+  color: hsl(158, 36%, 37%);
+  font-family: 'Fraunces', serif;
+  font-size: 45px;
+  display: flex;
+  align-items: flex-start;
+
+  margin-bottom: 27.75px;
+}
+.container .internal .contentBx .interior #price del{
+  color: hsl(228, 12%, 48%);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+
+  margin-top: 18px;
+  padding-left: 20px;
+}
+.container .internal .contentBx .interior button{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background: hsl(158, 36%, 37%);
+  border: 0px;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  /* margin-top: 256px; */
+}
+.container .internal .contentBx .interior button span{
+  color: hsl(0, 0%, 100%);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  padding-left: 10px;
+  font-weight: 700;
+}
+
+.container .internal .contentBx .interior button:hover{
+  background: hsl(157, 95%, 9%);
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 375px ){
+  body{
+    padding: 0px;
+  }
+  .container{
+    width: 375px;
+    height: 812px;
+    margin: 0px;
+  }
+  .container .internal{
+    width: 350px;
+    height: 762.9px;
+    flex-direction: column;
+    align-items: center;
+    margin: 24.55px 12.5px;
+  }
+  .container .internal .imgBx{
+    height: 237.9px;
+  }
+  .container .internal .imgBx picture img{
+    border-radius: 10px 10px 0px 0px;
+  }
+  .container .internal .contentBx{
+    width: 350px;
+    border-radius: 0px 0px 10px 10px;
+  }
+  
+}
